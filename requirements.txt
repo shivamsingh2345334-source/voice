@@ -1,0 +1,32 @@
+# --- Web / API ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+httpx>=0.27.0
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# --- LLM / STT (Groq) ---
+groq>=0.11.0
+
+# --- Orchestration ---
+langgraph>=0.2.50
+
+# --- Storage: Supabase (Postgres + pgvector) & Upstash Redis ---
+supabase>=2.10.0
+upstash-redis>=1.2.0
+
+# --- Embeddings (local ONNX, no torch needed for this part) ---
+fastembed>=0.3.6
+numpy>=1.26.0
+
+# --- Edge VAD (Silero) ---
+silero-vad>=5.1
+torch>=2.2.0
+torchaudio>=2.2.0
+
+# --- TTS ---
+gTTS>=2.5.1
+
+# --- Optional: only for scripts/edge_mic_client.py (live microphone) ---
+# sounddevice>=0.4.7
